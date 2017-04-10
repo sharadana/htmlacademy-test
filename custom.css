@@ -1,0 +1,118 @@
+body {
+  background-color: #fff;
+}
+.nav, .boxes, .sidebar, .footer,.footer form{
+  display: flex;
+  flex-flow: row wrap;
+}
+.header {
+  background-image: url(img/5150x3641-300dpi-solnce-i-samolet-600x424.jpg);
+  background-size: cover;
+}
+.search .search-str {
+    border: 1px solid #BCBCBC;
+    border-left: none;
+    padding: 1px 0px 1px 5px;
+    width: 158px;
+    text-transform: uppercase;
+    font-size: 11px;
+    color: black;
+    float: right;
+    border-radius: 8px 0 0 8px;
+    margin:10px 0 0 0;
+    outline: none;
+    color: #b3b3b3;
+    font-style: italic;
+}
+.search .img {
+    padding: 0px 0px 1px 1px;
+    text-transform: uppercase;
+    font-size: 9px;
+    float: right;
+    border-radius: 0 8px 8px 0;
+    margin: 10px 10px 0 0;
+}
+.nav {
+  justify-content: center;
+}
+.nav a {
+  width: 23%;
+}
+.action {
+  color: #fff0e6;
+}
+
+.menu .button {
+  width: 100px;
+  margin: 10px;
+}
+
+.info .sidebar {
+background-color: #fff;
+float: left;
+width: 100px;
+margin: 0;
+}
+.sidebar p,ul {
+  margin-bottom: 0;
+  margin: auto;
+}
+.boxes div {
+  flex: 1 1 250px;
+  margin: 10px;
+  border-radius: 5px;
+  padding: 10px 10px 0 10px;
+  background-color: rgba(0,0,0,.1);
+  display: flex;
+  flex-flow: column;
+}
+.boxes img {
+  width: 200px;
+  margin-left: auto;
+  margin-right: auto;
+  border: 1px solid black;
+  box-shadow: 0 0 10px rgba(0,0,0,0.5);
+  margin-bottom: 10px;
+}
+.boxes .more {
+  margin-top: auto;
+}
+.footer .copyright {
+  flex: 2 1 500px;
+  margin-right: 30px;
+}
+.footer .signup {
+  flex: 1 1 250px;
+}
+.signup label {
+  width: 100%;
+}
+.signup input[type="email"] {
+  border-radius: 4px 0 0 4px;
+  flex: 1;
+}
+.signup input[type="submit"] {
+  border-radius: 0 4px 4px 0;
+  padding: 0 10px;
+}
+.signup .button {
+  background-color: rgb(215, 143, 97);
+  color: #fff;
+}
+@media (max-width: 500px) {
+  .nav {
+    flex-flow: column;
+    justify-content: center;
+  }
+  .boxes img {
+    margin-left: 50px;
+  }
+  .nav .button {
+    width: 100%;
+    margin-bottom: 2px;
+  }
+
+  .boxes div {
+  
+  }
+}
